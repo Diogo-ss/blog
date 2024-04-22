@@ -1,0 +1,49 @@
+baseURL: ''
+languageCode: en-us
+title: Diogo Silva
+theme: PaperMod
+
+params:
+  # ShowShareButtons: true
+  # ShowReadingTime: true
+  ShowCodeCopyButtons: true
+  env: production
+  keywords: [Blog, Portfolio, C, C++, Lua, Neovim, Vim]
+  homeInfoParams:
+    Title: "Hey, I’m Diogo"
+    Content: I’m a backend developer with a strong interest in low-level development and Linux. I focus on studying C, C++, and Lua languages.
+
+  socialIcons:
+    - name: github
+      url: https://github.com/Diogo-ss
+    - name: linkedin
+      url: https://www.linkedin.com/in/diogo-ss/
+    - name: instagram
+      url: https://www.instagram.com/diogosilva.ss/
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 10
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 20
+    - identifier: posts
+      name: Blog
+      url: /posts/
+      weight: 30
+    - name: Archive
+      url: archives
+      weight: 40
+    - name: Tags
+      url: tags/
+      weight: 50
